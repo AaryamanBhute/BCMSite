@@ -1,0 +1,71 @@
+{% load static %}
+<!DOCTYPE html>
+<html lan="en">
+<head>
+	<link rel="stylesheet" href="{% static 'website/home.css' %}">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block page_title_header %}{% endblock %}</title>
+</head id=container>
+<body>
+	<div id=container>
+		<div class ="navbar sticky">
+			<a href="/"><img src="https://i.ibb.co/xqmpJv7/bcmlogo.jpg" class="logo"></a>
+			<a href="/" class="makeBorder navitem">Home</a>
+			<a href="/investments" class="makeBorder navitem">Investment Philosophy & Strategy</a>
+			<a href="/about" class="makeBorder navitem">About BCM</a>
+			<div id="droptrigger">
+				<a id = "" href="/portfolios" class="makeBorder navitem">Model Portfolios</a>
+				<ul id="dropdown">
+					<li><a href="/portfolios#autotech">Auto-Tech & Mobility</a></li>
+					<li><a href="/portfolios#FinancialTechnology">Financial Technology</a></li>
+					<li><a href="/portfolios#SpaceExploration">Space Exploration</a></li>
+					<li><a href="/portfolios#3DPrinting">3D Printing</a></li>
+					<li><a href="/portfolios#RenewableEnergy">Renewable Energy</a></li>
+					<li><a href="/portfolios#Healthcare&Biotech">Healthcare & Biotech</a></li>
+					<li><a href="/portfolios#ArtificialIntelligence">Artificial Intelligence</a></li>
+				</ul>
+			</div>
+			<a href="/research" class="navitem">Research</a>
+		</div>
+		
+		<div id="body">
+			{% block content %}
+			{% endblock %}
+		</div>
+		<div class="footer">
+			<div class = "description">
+				<p style="font-size: 20px; font-weight: 1000;">BRUIN CAPITAL MANAGEMENT</p>
+				<br>
+				<p>We are a student-managed hedge fund at UCLA</p>
+			</div>
+			<div class = "quicklinks">
+				<p style="font-size: 20px; display: block; margin-top: 0vh;margin-bottom: 1vh; font-weight: 1000;">MENU</p>
+				<a href="">Home</a>
+				<a href="">Investment Philosphies and Strategy</a>
+				<a href="">About BCM</a>
+				<a href="" class="dropdown"> Model Portfolios</a>
+				<a href="">Research</a>
+			</div>
+			<div class = "sociallinks">
+				<p style="font-size: 20px; display: block; margin-top: 0vh; font-weight: 1000;text-align: center;">SOCIALS</p>
+				<div class="socialbar">
+					<a href="">
+	                	<img src="https://i.ibb.co/GHvnjYV/facebooklogo.png" class="linkImg">
+		            </a>
+		            <a href="">
+		                <img src="https://i.ibb.co/CJZ8FGb/instagram.png" class="linkImg">
+		            </a>
+		            <a href="">
+		                <img src="https://i.ibb.co/p0fzZ6M/linkedin.png" class="linkImg">
+		            </a>
+				</div>
+				<p style="font-size: 20px; display: block; font-weight: 1000;text-align: center;">EMAIL</p>
+				<p style="display: block;margin-top: -1vh;">bruincapitalmanagement@gmail.com</p>
+			</div>
+		</div>
+	</div>
+	<script src="{% static 'website/slideshow.js' %}"></script>
+</body>
+</html>

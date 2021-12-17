@@ -1,0 +1,65 @@
+{% extends 'website/main.html' %}
+
+{% block page_title_header%}
+BCM - Home
+{% endblock %}
+{% block content %}
+	<div id="bodyheader" class="bodytextwrapper">
+		<div class="tagline">
+			<p style="margin-top: 0vh;"><strong>Invest In Innovation</strong></p>
+			<p style="font-size: 15px;text-align: center;margin-top: -5vh;">Student managed Hedgefund at UCLA</p>
+		</div>
+		<img src="https://static.wixstatic.com/media/002b52_46c99861e54d4a2c9a94df0961a4b92d~mv2.png/v1/fill/w_456,h_304,al_c,q_85,usm_0.66_1.00_0.01/image1.webp">
+		
+	</div>
+	<div id="menuboxwrapper">
+		<div class="menubox">
+			<p style="font-size:30px;text-align: center;width: 100%;height: 10vh;"><strong>Investment Philosophy & Strategy</strong></p>
+			<p>Desc</p>
+			<button style="font-size: 15px;"><strong> More Info </strong></button>
+		</div>
+		<div class="menubox">
+			<p style="font-size:30px;text-align: center; width: 100%;height: 10vh;"><strong>Model Portfolios</strong></p>
+			<p>Desc</p>
+			<button style="font-size: 15px;"><strong> More Info </strong></button>
+		</div>
+		<div class="menubox">
+			<p style="font-size:30px;text-align: center; width:100%;height: 10vh;"><strong>Research</strong></p>
+			<p>Desc</p>
+			<button style="font-size: 15px;"><strong> More Info </strong></button>
+		</div>
+	</div>
+	<div class="aboutbar">
+		<h1><strong>ABOUT BCM</strong></h1>
+		<h2 style="min-height: 150px;">| Paragraph |</h2>
+		<button> Learn More </button>
+	</div>
+	<div style="display:flex;justify-content: center;padding-top: 3vh;padding-bottom: 3vh;">
+		<h1 style="font-size:40px"> Emerging Sectors </h1>
+	</div>
+	<div class="sectorboxwrapper">
+		<button onclick="window.location.href='/portfolios#autotech'" class="sectorbox">
+			<p>Auto-Tech & Mobility</p>
+		</button>
+		<button onclick="window.location.href='/portfolios#FinancialTechnology'" class="sectorbox">
+			<p>Financial Technology</p>
+		</button>
+		<button onclick="window.location.href='/portfolios#SpaceExploration'" class="sectorbox">
+			<p>Space Exploration</p>
+		</button>
+		<button onclick="window.location.href='/portfolios#3DPrinting'" class="sectorbox">
+			<p>3D Printing</p>
+		</button>
+	</div>
+	<div class="sectorboxwrapper" style="margin-bottom: -15vh;">
+		<button onclick="window.location.href='/portfolios#RenewableEnergy'" class="sectorbox">
+			<p>Renewable Energy</p>
+		</button>
+		<button onclick="window.location.href='/portfolios#Healthcare&Biotech'" class="sectorbox">
+			<p>Healthcare & Biotech</p>
+		</button>
+		<button onclick="window.location.href='/portfolios#ArtificialIntelligence'" class="sectorbox">
+			<p>Artifical Intelligence</p>
+		</button>
+	</div>
+{% endblock %}
