@@ -1,0 +1,491 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+html{
+	font-family: 'Zen Kaku Gothic New', sans-serif;
+	overflow-x: hidden;
+}
+ul{
+    list-style: none; 
+    padding:0;
+    margin:0;
+}
+li{
+	display: inline;
+	padding-right: 2vw;
+	padding-left: 2vw;
+}
+.sticky{
+	margin-top: -1vh;
+    position: -webkit-sticky;
+    position: sticky;
+}
+.navbar{
+	top: 0;
+	z-index: 999;
+	margin-top: -1vh;
+	margin-left: -1vw;
+	width: 101vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #242132;
+}
+.makeBorder{
+	border-right: 1px solid white;
+}
+.logo{
+	height: 15vh;
+	padding: 3.5vh;
+	margin-right: 8vw;
+}
+li a{
+	text-decoration: none;
+	color: white;
+}
+.navitem{
+	color: white;
+	text-decoration: none;
+	font-size: 2.5vh;
+	font-weight: 500;
+	transition: 0s ease-in-out;
+	padding-right: 2vw;
+	padding-left: 2vw;
+}
+#container{
+	min-height: 100%;
+}
+#body{
+	padding:10px;
+	padding-bottom:30vh;
+}
+.aboutbar{
+	display: table;
+	text-align: center;
+	min-height: 60vh;
+	width: 101vw;
+	margin-left: -2vw;
+	background-color: #242132;
+	margin-top: 15vh;
+	justify-content: center;
+}
+.aboutbar h1{
+	color: white;
+	font-size: 60px;
+}
+.aboutbar h2{
+	color: white;
+}
+.aboutbar button{
+	color: white;
+	font-size: 25px;
+	background-color: #242132;
+	width: 15vw;
+	height: 7vh;
+	border: 2px solid white;
+}
+.aboutbar button:hover{
+	color: black;
+	background-color: white;
+}
+.sectorboxwrapper{
+	display: flex;
+	justify-content: center;
+}
+.sectorbox{
+	width: 200px;
+	height: 150px;
+	border: 1px solid black;
+	background-color: white;
+	text-align: center;
+	font-size: 30px;
+	font-weight: 300;
+	color: black;
+}
+.sectorbox:hover{
+	background-color: #242132;
+	color: white;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+.footer{
+	bottom: 0;
+	height:33vh;
+	display: flex;
+	background-color: #242132;
+	justify-content: space-between;
+	align-items: flex-start;
+	width: 101vw;
+	margin: -1vw;
+	font-weight: 700;
+}
+.footer .description{
+	width: 100vw;
+	margin-top: -6vh;
+	display: table;
+	height: max-content;
+	padding: 5vw;
+	padding-right: 3vw;
+	padding-left: 7vw;
+}
+.footer .description p{
+	display: table-row;
+	color: white;
+	font-size: 15px;
+}
+.footer .quicklinks{
+	display: table;
+	border-spacing: 1vh;
+	text-align: left;
+	padding-right: 0vw;
+	padding-left: 10vw;
+	padding-top: 3vh;
+	padding-bottom: 3vh;
+	width: 60vw;
+}
+.footer .quicklinks p{
+	display: table-row;
+	color: white;
+	font-size: 15px;
+}
+.footer .quicklinks a{
+	text-decoration: none;
+	display: table-row;
+	border-top: 1px solid white;
+	color: white;
+	font-size: 15px;
+	padding: 2vh;
+}
+.footer .quicklinks a:hover{
+	color: lightgrey;
+}
+.footer .sociallinks{
+	display: table;
+	border-spacing: 3vh;
+	width: 40vw;
+	padding-left: 6vw;
+	padding-right: 6vw;
+}
+.footer .sociallinks a{
+	text-decoration: none;
+}
+.socialbar{
+	display: flex;
+	column-gap: 1.5vw;
+}
+.socialbar img{
+	width: 3vw;
+	filter: brightness(0.5) invert(1);
+}
+.socialbar img:hover{
+	filter: brightness(0.5) invert(0.8);
+}
+.footer .sociallinks p{
+	display: table-row;
+	color: white;
+	font-size: 15px;
+}
+a.navitem:hover{
+	color: lightgrey;
+	text-decoration: underline;
+	transition: 0s ease-in-out;
+}
+#dropdown{
+	display: none;
+	padding-top: 10px;
+	min-width: 10px;
+	max-width: 200px;
+	position: absolute;
+	color: white;
+	background-color: #242132;
+}
+#dropdown li{
+	padding: 5px;
+}
+li a:hover{
+	color: lightblue;
+}
+#droptrigger:hover #dropdown{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.centerflex{
+	display: flex;
+	width: 100vw;
+	justify-content: center;
+}
+.bodytextwrapper{
+	justify-content: center;
+	align-items: center;
+	padding: 3vw;
+	font-size: 50px;
+	column-gap: 20vw;
+}
+#modelwrapper{
+	display: flex;
+	width: 80vw;
+	flex-wrap: wrap;
+}
+#modelwrapper button{
+	border: 1px solid #242132;
+	padding: 2vh;
+	width: 100%;
+	background-color: white;
+	font-size: 35px;
+}
+#modelwrapper button:hover{
+	background-color: #242132;
+	color: white;
+}
+.modelpicture{
+	display: flex;
+	justify-content: center;
+	padding: 2vw;
+}
+.modelpicture img{
+	width: 50vw;
+}
+.model{
+	padding: 2vw;
+	padding-top: 10vh;
+	padding-bottom: 10vh;
+}
+.modeldescription{
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+.modeltitle{
+	font-size: 25px;
+	text-align: center;
+}
+.modeldescription p{
+	font-size: 20px;
+}
+.modelflex{
+	display: flex;
+	align-content: flex-start;
+	width: 100%;
+	justify-content: center;
+}
+.modeloverview{
+	width: 50%;
+	display: flex;
+	border: 1px solid black;
+}
+.modelsubdescription{
+	text-align: justify;
+	width: 50%;
+	display: flex;
+	border: 1px solid black;
+}
+#menuboxwrapper{
+	display: flex;
+	justify-content: center;
+	margin-top: 1vh	;
+}
+.menubox{
+	display: flex;
+	justify-content: center;
+	border: 1px solid grey;
+	padding: 5vw;
+	padding-top: 0vh;
+	flex-wrap: wrap;
+	width: 20vw;
+	column-gap: 0vw;
+}
+.menubox p{
+	text-align: center;
+	width: 100%;
+}
+.menubox button{
+	margin-top: 5vh;
+	width: 150px;
+	height: 50px;
+	color: white;
+	background-color: #242132;
+	border: 1px solid #242132;
+	transition: ease-in-out;
+}
+.menubox button:hover{
+	background-color: lightgrey;
+	color: black;
+	transition: ease-in-out;
+}
+#tagline{
+	width: 30vw;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	font-weight: 1500;
+}
+#bodyheader{
+	display: flex;
+	justify-content: center;
+	font-weight: 900;
+	padding: 5vw;
+	padding-bottom: 6vw;
+}
+.tablewrapper{
+	padding-top: 5vw;
+	display: flex;
+	width: 100%;
+	justify-content: center;
+}
+.tablewrapper table{
+	text-align: center;
+	font-weight: 600;
+	width: 100%;
+	border: 1px solid black;
+}
+.titlewrapper{
+	display: flex;
+	width: 100vw;
+	justify-content: center;
+	text-align: center;
+	font-size: 30px;
+}
+.personlinewrapper{
+	margin-left: -1.5vw;
+	padding-top: 5vh;
+	padding-bottom: 5vh;
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	column-gap: 10vw;
+}
+.personwrapper{
+	padding: 1vw;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	background-color: #242132;
+	color: white;
+}
+.persondesc{
+	display: table-row;
+	text-align: center;
+}
+.personwrapper img{
+	width: 30vw;
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  width: 50vw;
+  padding: 5vh;
+  gap: 10vw;
+  text-align: center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  right: 90%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.sliderimg{
+	width: 20vw;
+	height: auto;
+}
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+.slideshow-container{
+	margin-top: 10vh;
+	background-color: #242132;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	width: 80vw;
+}
+.slidetext{
+	color: white;
+	display: table-row;
+	text-align: justify;
+	width: 25vw;
+}
