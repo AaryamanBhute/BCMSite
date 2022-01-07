@@ -34,7 +34,6 @@ li{
 	border-right: 1px solid white;
 }
 .logo{
-	height: 15vh;
 	padding: 3.5vh;
 	margin-right: 8vw;
 }
@@ -45,7 +44,7 @@ li a{
 .navitem{
 	color: white;
 	text-decoration: none;
-	font-size: 2.5vh;
+	font-size: 1vw;
 	font-weight: 500;
 	transition: 0s ease-in-out;
 	padding-right: 2vw;
@@ -77,7 +76,7 @@ li a{
 }
 .aboutbar button{
 	color: white;
-	font-size: 25px;
+	font-size: 1.6vw;
 	background-color: #242132;
 	width: 15vw;
 	height: 7vh;
@@ -92,12 +91,12 @@ li a{
 	justify-content: center;
 }
 .sectorbox{
-	width: 200px;
-	height: 150px;
+	width: 13vw;
+	height: 9.8vw;
 	border: 1px solid black;
 	background-color: white;
 	text-align: center;
-	font-size: 30px;
+	font-size: 1.5vw;
 	font-weight: 300;
 	color: black;
 }
@@ -132,7 +131,7 @@ a{
 .footer .description p{
 	display: table-row;
 	color: white;
-	font-size: 15px;
+	font-size: 1vw;
 }
 .footer .quicklinks{
 	display: table;
@@ -147,14 +146,14 @@ a{
 .footer .quicklinks p{
 	display: table-row;
 	color: white;
-	font-size: 15px;
+	font-size: 1vw;
 }
 .footer .quicklinks a{
 	text-decoration: none;
 	display: table-row;
 	border-top: 1px solid white;
 	color: white;
-	font-size: 15px;
+	font-size: 1vw;
 	padding: 2vh;
 }
 .footer .quicklinks a:hover{
@@ -184,7 +183,7 @@ a{
 .footer .sociallinks p{
 	display: table-row;
 	color: white;
-	font-size: 15px;
+	font-size: 1vw;
 }
 a.navitem:hover{
 	color: lightgrey;
@@ -193,15 +192,15 @@ a.navitem:hover{
 }
 #dropdown{
 	display: none;
-	padding-top: 10px;
-	min-width: 10px;
-	max-width: 200px;
+	padding-top: 0.65vw;
+	min-width: 0.65vw;
+	max-width: 10vw;
 	position: absolute;
 	color: white;
 	background-color: #242132;
 }
 #dropdown li{
-	padding: 5px;
+	padding: 0.3vw;
 }
 li a:hover{
 	color: lightblue;
@@ -220,7 +219,7 @@ li a:hover{
 	justify-content: center;
 	align-items: center;
 	padding: 3vw;
-	font-size: 50px;
+	font-size: 3.2vw;
 	column-gap: 20vw;
 }
 #modelwrapper{
@@ -233,7 +232,7 @@ li a:hover{
 	padding: 2vh;
 	width: 100%;
 	background-color: white;
-	font-size: 35px;
+	font-size: 2.27vw;
 }
 #modelwrapper button:hover{
 	background-color: #242132;
@@ -258,11 +257,11 @@ li a:hover{
 	text-align: center;
 }
 .modeltitle{
-	font-size: 25px;
+	font-size: 1.6vw;
 	text-align: center;
 }
 .modeldescription p{
-	font-size: 20px;
+	font-size: 1.3vw;
 }
 .modelflex{
 	display: flex;
@@ -302,8 +301,8 @@ li a:hover{
 }
 .menubox button{
 	margin-top: 5vh;
-	width: 150px;
-	height: 50px;
+	width: 9.7vw;
+	height: 3.2vw;
 	color: white;
 	background-color: #242132;
 	border: 1px solid #242132;
@@ -345,7 +344,7 @@ li a:hover{
 	width: 100vw;
 	justify-content: center;
 	text-align: center;
-	font-size: 30px;
+	font-size: 1.95vw;
 }
 .personlinewrapper{
 	margin-left: -1.5vw;
@@ -376,7 +375,7 @@ li a:hover{
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
+  max-width: 65vw;
   position: relative;
   margin: auto;
 }
@@ -397,11 +396,11 @@ li a:hover{
   top: 50%;
   right: 90%;
   width: auto;
-  margin-top: -22px;
-  padding: 16px;
+  margin-top: -1.432vw;
+  padding: 1.042vw;
   color: white;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 1.172vw;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
@@ -445,17 +444,55 @@ li a:hover{
 /* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
-  height: 15px;
-  width: 15px;
+  height: 0.977vw;
+  width: 0.977vw;
   margin: 0 2px;
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
+.title{
+	font-size: 2.5vw;
+	font-weight: 900;
+}
 
 .active, .dot:hover {
   background-color: #717171;
+}
+.articlebox{
+	padding-top: 8vh;
+	padding-bottom: 8vh;
+	display: flex;
+	flex-wrap: wrap;
+	width: 100vw;
+	gap: 10vw;
+	justify-content: center;
+}
+.articlewrapper{
+	border: 1px solid black;
+	background-color: #242132;
+	min-height: 50vh;
+	min-width: 20vw;
+}
+.podcastwrapper{
+	text-align: center;
+	padding-left: 15vw;
+	padding-right: 15vw;
+	padding-top: 5vh;
+	padding-bottom: 10vh;
+	border: 2px solid #242132;
+}
+.podcastbutton{
+	background-color: white;
+	width: 12vw;
+	height: 8vh;
+	color: black;
+	font-size: 1.3vw;
+}
+.podcastbutton:hover{
+	background-color: #242132;
+	color: white;
 }
 
 /* Fading animation */
@@ -488,4 +525,39 @@ li a:hover{
 	display: table-row;
 	text-align: justify;
 	width: 25vw;
+}
+.investphilosophy{
+	display: flex;
+	flex-wrap: wrap;
+	background-color: #242132;
+	color: white;
+}
+.infoinvest{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	background-color: #bfbfbf;
+	width: 70vw;
+	font-size: 1.5vw;
+	font-weight: 600;
+}
+.investlist{
+	font-size: 1vw;
+	padding: 5vw;
+	padding-top: 1vw;
+}
+.investimg{
+	width: 20vw;
+	height: 40vh;
+	padding: 2vw;
+	}
+@media (max-width: 500px){
+	.logo{
+		width: 50vw;
+	}
+}
+@media (min-width: 501px){
+	.logo{
+		width: 20vw;
+	}
 }
