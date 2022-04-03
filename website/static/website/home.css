@@ -104,6 +104,9 @@ li a{
 	background-color: #242132;
 	color: white;
 }
+.backgroundimg{
+	background-image: url("https://i.ibb.co/b3WBHwt/images.png");
+}
 a{
 	text-decoration: none;
 	color: black;
